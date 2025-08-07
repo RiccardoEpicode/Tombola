@@ -72,13 +72,18 @@ button {
 #tabellone {
   display: grid;
   grid-template-columns: repeat(15, 2fr);
+  white-space: normal;
 }
 .cella-tabellone {
-  border: 5px solid #1f1e1e;
+  display: inline-block;
+  width: 15%;
+  min-width: 60px;
+  margin: 5px 5%;
+  aspect-ratio: 1/1;
+  border: 2px solid black;
+  font-weight: bold;
   text-align: center;
-  margin: 5px;
-  width: 90px;
-  height: 50px;
+  vertical-align: middle;
   background-color: white;
 }
 

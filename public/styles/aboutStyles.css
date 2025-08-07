@@ -44,17 +44,20 @@ nav div {
 h1 {
   color: white;
   margin: 25px 0;
+  font-size: 30px;
 }
 
 h2 {
   color: white;
   margin: 25px 0;
+  font-size: 30px;
 }
 
 p,
 li,
 ul {
   color: antiquewhite;
+  font-size: 25px;
 }
 
 footer {
