@@ -5,8 +5,8 @@ Questo progetto nasce come esercizio pratico per imparare e approfondire la **ma
 
 ## 🚀 Funzionalità principali
 
-- ✅ Generazione dinamica di un **tabellone da 76 numeri**.
-- 🔘 **Pulsante di estrazione** per simulare l'uscita casuale di numeri da 1 a 76.
+- ✅ Generazione dinamica di un **tabellone da 90 numeri**.
+- 🔘 **Pulsante di estrazione** per simulare l'uscita casuale di numeri da 1 a 90.
 - 🎨 Evidenziazione dei numeri estratti nel tabellone.
 - 💾 Memorizzazione dei numeri già estratti per evitare duplicati.
 
