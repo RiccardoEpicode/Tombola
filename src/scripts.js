@@ -1,4 +1,5 @@
 // RICCARDO REALI - EPICODE - 2025
+const numeriEstratti = [];
 
 const createTabellone = () => {
   const tabellone = document.getElementById("tabellone");
@@ -17,13 +18,26 @@ createTabellone();
 const startPlay = document.getElementById("giocaBtn");
 
 startPlay.onclick = () => {
-  const selectedNum = Math.floor(Math.random() * 90 + 1);
+  if (numeriEstratti.length >= 90) {
+    alert("Hai estratto tutti i numeri!");
+    return;
+  }
+
+  let selectedNum;
+  do {
+    selectedNum = Math.floor(Math.random() * 90 + 1);
+  } while (numeriEstratti.includes(selectedNum));
+
+  numeriEstratti.push(selectedNum);
+
   const celle = document.querySelectorAll(".cella-tabellone");
 
   for (let i = 0; i < celle.length; i++) {
     const cella = celle[i];
     if (selectedNum === parseInt(cella.id)) {
-      cella.innerText = i + "❌";
+      if (!cella.innerText.includes("❌")) {
+        cella.innerText += " ❌";
+      }
       break;
     }
   }
