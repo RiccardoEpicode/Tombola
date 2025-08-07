@@ -1,3 +1,5 @@
+// RICCARDO REALI - EPICODE - 2025
+
 const createTabellone = () => {
   const tabellone = document.getElementById("tabellone");
 
